@@ -1,0 +1,18 @@
+1、Which registers contain arguments to functions? For example, which register holds 13 in main's call to printf?
+
+a0~a7 registers contain function arguments, and the a2 register hold 13 in main's call to printf.
+
+
+2、Where is the call to function f in the assembly code for main? Where is the call to g? (Hint: the compiler may inline functions.)
+
+-> 26:	45b1                	li	a1,12
+in this line, the compiler calculate the return value of f() and g(), and write the immediate directly into a1.
+
+
+3、At what address is the function printf located?
+
+0x630
+
+4、What value is in the register ra just after the jalr to printf in main?
+
+0x38
