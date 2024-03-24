@@ -1,0 +1,4 @@
+e1->next = n : e2->next = 0
+*p = e1
+*p = e2
+----e1 lost
